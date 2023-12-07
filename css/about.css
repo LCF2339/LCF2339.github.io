@@ -1,25 +1,16 @@
 /* 
 Author: Pavan Teja Yarlagadda
-Date: dec 01, 2023
+Date: dec 03, 2023
 File Name: about.css 
 */
 
 
 
-/* Show mobile class, hide tablet-desktop class */
-.mobile {
-    display: block; 
-}
-
-.tablet-desktop {
-    display: none;
-}
-
 /* Style rules for main content */ 
 main {
-    background-color: rgb(177, 153, 153);
+    background-color: #b19999;
     padding: 2%;
-    font-size: 1.15em;
+    font-size: 1.25em;
     font-family: 'Roboto Slab', serif;
 }
 
@@ -30,9 +21,9 @@ main {
 
 .tel-link { 
     background-color: #404040;
-    padding: 2%; 
+    padding: 3%; 
     margin: 0 auto;
-    width: 80%; 
+    width: 85%; 
     text-align: center;
     border-radius: 5px; 
 }
@@ -40,7 +31,7 @@ main {
 .tel-link a {
     color: #fff; 
     text-decoration: none; 
-    font-size: 1.5em; 
+    font-size: 1.05em; 
     display: block;
 }
 
@@ -54,9 +45,7 @@ main {
     font-weight: bold;
 }
 
-#weights, #cardio, #training {
-    margin: 0 2%;
-}
+
 
 .round {
     border-radius: 8px;
@@ -81,6 +70,15 @@ main {
     border: 2px solid #000;
     width: 95%;
     height: 50%
+}
+
+/* Show mobile class, hide tablet-desktop class */
+.mobile {
+    display: block; 
+}
+
+.tablet-desktop {
+    display: none;
 }
 
 /* Style rules for footer content */
@@ -135,22 +133,7 @@ main ul {
     margin: 0 0 4% 10%;
 }
 
-#exercises {
-    clear: left;
-    border-top: 1px solid #000;
-    background: linear-gradient(to right, #ccc, #fff);
-    border-bottom: 1px solid #000;
-    background-color: #f2f2f2;
-    padding: 1% 2%;
-}
 
-#exercises dt {
-    font-weight: bold;
-}
-
-#exercises dd {
-    padding: 0.5% 1% 2% 0;
-}
 
 .tel-num {
     font-size: 1.25em;
@@ -207,17 +190,7 @@ main h1 {
     font-size: 1.8em;
 }
 
-#weights, #cardio, #training { 
-    width: 29%;
-    float: left;
-    margin: 0 2%;
-}
 
-#exercises {
-    clear: left;
-}
-
-}
 
 /* Media Query for Large Desktop Viewports */ 
 @media screen and (min-width: 1921px) {
@@ -237,4 +210,4 @@ main h1 {
         color: #000;
     }
 
-}
+}}

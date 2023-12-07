@@ -224,11 +224,6 @@ main {
 
 
 
-
-#weights, #cardio, #training {
-    margin: 0 2%;
-}
-
 .round {
     border-radius: 8px;
 }
@@ -313,22 +308,6 @@ main ul {
 }
 
 
-#exercises {
-    clear: left;
-    border-top: 1px solid #000;
-    background: linear-gradient(to right, #ccc, #fff);
-    border-bottom: 1px solid #000;
-    background-color: #f2f2f2;
-    padding: 1% 2%;
-}
-
-#exercises dt {
-    font-weight: bold;
-}
-
-#exercises dd {
-    padding: 0.5% 1% 2% 0;
-}
 
 .tel-num {
     font-size: 1.25em;
@@ -386,15 +365,6 @@ main h1 {
     font-size: 1.8em;
 }
 
-#weights, #cardio, #training { 
-    width: 29%;
-    float: left;
-    margin: 0 2%;
-}
-
-#exercises {
-    clear: left;
-}
 
 .mobile-img{
     display: block;

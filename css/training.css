@@ -1,4 +1,8 @@
-
+/* 
+Author: Pavan Teja Yarlagadda
+Date: October 20, 2023
+File Name: training.css 
+*/
 table {
     border: 3px solid #000;
     border-collapse: collapse;
@@ -8,7 +12,7 @@ table {
 }
 
 table caption{
-    background-color: chocolate;
+    background-color: rgb(210, 30, 60);
     border-style:double;
     font-size: x-large;
 }
@@ -21,16 +25,16 @@ table tr,th,td{
 table th{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: larger;
-    background-color: orange;
+    background-color: rgb(0, 255, 42);
     padding: auto;
 }
 
 tr:nth-child(odd) {
-    background-color: bisque;
+    background-color: rgb(196, 255, 209);
 }
 
 tr:nth-child(even){
-    background-color:burlywood;
+    background-color:rgb(201, 255, 84);
 }
 
 tbody tr:hover {

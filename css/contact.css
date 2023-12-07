@@ -1,3 +1,8 @@
+/* 
+Author: Pavan Teja Yarlagadda
+Date: dec 04, 2023
+File Name: contact.css 
+*/
 
 
 body {
@@ -9,11 +14,11 @@ body {
   form {
     width: 100%;
     margin: 0 auto;
-    background-color: aliceblue;
+    background-color: rgb(234, 216, 57);
   }
   
   fieldset {
-    border: 1px solid #ccc;
+    border: 1px solid rgb(204, 204, 204);
     padding: 10px;
     margin-bottom: 20px;
   }
@@ -32,8 +37,8 @@ body {
   
   button {
       padding: 10px;
-      margin-right: 10px; /* Add margin between buttons */
-      background-color: #4CAF50;
+      margin-right: 10px; 
+      background-color: #0f1710;
       color: #fff;
       border: none;
       cursor: pointer;

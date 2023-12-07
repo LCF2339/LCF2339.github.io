@@ -1,30 +1,28 @@
+/* 
+Author: Pavan Teja Yarlagadda
+Date: dec 04, 2023
+File Name: team.css 
+*/
 
-.grid {
+.team {
     display: grid;
     grid-template-columns: auto auto auto;
     grid-gap: 20px;
     background-color: #b19999;
 }
 
-.grid-item4 {
-    grid-column: 1 / span 1;
-}
 
-.grid-item5{
-    grid-column: 2/span 1;
-}
-
-.grid-item6{
+.grid-item{
     background-color: blanchedalmond;
     border-style: double;
     grid-column: 1/span 2;
     
 }
 
-.grid-item6 p{
+.grid-item p{
     color: #6081ba;
 }
-.grid-item6 h2{
+.grid-item h2{
     color: rgb(0, 0, 0);
 }
 
