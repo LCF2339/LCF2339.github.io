@@ -1,120 +1,443 @@
-body {
-    background-color: #9fffff;
-}
+/* 
+Author: Pavan Teja Yarlagadda
+Date: October 20, 2023
+File Name: style.css 
+*/
 
-
-
-header {
-    background-color: #991515;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    text-align: center;
-}
-
-nav {
-    font-family: Arial, sans-serif;
-    max-width:  1000px;
-    margin: 0 auto;
-    padding: 12px;
-
-}
-
-main {
-    display: block;
-    font-family: Helvetica, sans-serif;
-    margin: 40px;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    background-color: #0f0f0e35;
-}
-
-
-
-h1 {
-    color: #ff6600;
-}
-
-ul{
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+/* CSS Reset */
+body, header, nav, main, footer, h1, div, img, ul {
     margin: 0;
     padding: 0;
+    border: 0;
 }
 
-li {
-    margin: 5px 10px;
+/* Style rules for body and images */
+body {
+    background-color: rgb(0, 0, 0);
 }
 
-.heading{
-    text-align: center;
+img {
+    max-width: 95%;
+    max-height: 90%;
+    display: block;
 }
 
-.paratext{
-    text-align: justify;
-    border-radius: 8px;
-    margin: 0  auto;
+/* Style rule for header */
+header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0; 
+    background-color: #000;
+    height: 150px;
+}
+
+header img {
+    margin: 0 auto;
+    height: 100px;
     
-    padding: 15px;
-    line-height: 1.6;
-    
 }
-.homeimg{
-    margin-top: 50px;
+
+h2 {
+    color: rgb(50, 55, 205);
+
 }
-.homeimg img{
-    border-radius: 10px;
+
+section p{
+    color: red;
+  
 }
-footer {
-    font-size: 14px;
+section h1{
+    color: yellowgreen;
+    -webkit-text-stroke:1px green;
+}
+
+main.intro-section {
+    position: relative;
+    width: 98%;
+    margin-left: 15px;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    align-items: center;
+}
+
+.intro-text {
     text-align: center;
-    margin-top: 20px;
+    color: #ffe417;     
+    margin-top: 130px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(245, 238, 238);
+}
+.intro-cap {
+    text-align: center;
+    color: #00ff11;     
+    font-weight: bold;
+    font: italic;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+}
+.bg-img img{
+    width: 1280px;
+    height: 1550px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+}
+h2.intro-text {
+    font-size: 2em;
+    
+    margin-bottom: 40px;
+}
+
+.spcl-h1{
+    color: #ffffff;
+    background-color: #b19999;
+}
+
+.spcl-cust{
+    background-color: #ffffff;
+}
+
+.intro-cap p {
+    font-size: 1.2em;
+    margin-top: 20;
+}
+
+#prodlist{
+    display: flex;
+    margin-left: 0px;
+    background-color: #b19999;
 }
 
 #product {
-  margin: 0 2%;
+    margin: 0 2%;
+    
+}
+
+#product img{
+    width: 300px;
+}
+
+.faq{
+    background-color: #b19999;
+}
+/* Style for rules for navigation area */ 
+/* new add */
+.mobile-nav a {
+	color: #fff;
+	font-family: 'Francois One', sans-serif;
+	text-align: center;
+	font-size: 2em;
+	text-decoration: none;
+	padding: 3%;
+	display: block;
+}
+
+.mobile-nav a.menu-icon {
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+/*--*/
+
+nav {
+    padding: 1%;
+    margin-bottom: 1%;
+}
+
+nav ul{
+    list-style-type: none;
+    text-align: center;
+}
+
+nav li{
+    font-size: 1.15rem;
+    font-family: 'Francois One', sans-serif;
+    border-top: 1px solid #fff; 
+}
+
+nav li:first-child { 
+    border-top: none;
+}
+
+nav li a{
+    display: block;
+    color: #fff;
+    padding: 0.5em 1em;
+    text-decoration: none;  
+}
+
+/* Show mobile class, hide tablet-desktop class */
+.mobile {
+    display: block; 
+}
+
+
+
+.tablet-desktop, #menu-links {
+    display: none;
+}
+
+/* Style rules for main content */ 
+main {
+    padding-right: 2%;
+    font-size: 1.15em;
+    font-family: 'Roboto Slab', serif;
+}
+
+.boldtext {
+    font-weight: bold;
+
+}
+
+.tel-link { 
+    background-color: #404040;
+    padding: 2%; 
+    margin: 0 auto;
+    width: 80%; 
+    text-align: center;
+    border-radius: 5px; 
+}
+
+.tel-link a {
+    color: #fff; 
+    text-decoration: none; 
+    font-size: 1.5em; 
+    display: block;
+}
+
+.hours { 
+    margin-left: 10%;
+}
+
+.action {
+    font-size: 1.35em;
+    color: #666600;
+    font-weight: bold;
+}
+
+
+
+
+
+#weights, #cardio, #training {
+    margin: 0 2%;
 }
 
 .round {
-  border-radius: 8px;
+    border-radius: 8px;
 }
 
-
-
-.pro{
-    max-width: 100%;
-    display: block;
-    height: 400px;
-    border-radius: 10px;
-}
-.prodlist1{
-    display: flex;
-}
-.prodlist2{
-    display: flex;
-}
-
-a{
+.external-link {
+    color: #666600;
+    font-weight: bold;
     text-decoration: none;
 }
-.banner{
-    width: 200px;
-    height: 100px;
+
+#contact {
+    text-align: center;
+    background-color: #b19999;
+}
+
+#contact .contact-email-link {
+    color: #666600;
+    text-decoration: none;
+}
+
+.map {
+    border: 2px solid #000;
+    width: 95%;
+    height: 50%
+}
+
+/* Style rules for footer content */
+footer p {
+    font-size: 0.75;
+    text-align: center;
+    color: #fff;
+    padding: 0 1em;
+}
+
+footer p a {
+    color: rgb(157, 157, 221)(0, 0, 255, 0.266);
+    text-decoration: underline;
+}
+
+
+
+
+
+
+/* Media Query for Tablet Viewport */ 
+@media screen and (min-width: 630px), print {
+
+/* Tablet Viewport: Show tablet-desktop class, hide mobile class */
+.tablet-desktop { 
     display: block;
 }
 
-a:visited {
-    color: #e80707;
-  }
+.mobile {
+    display: none;
+}
 
-.info{
-    display: flex;
+/* Tablet Viewport: Style rule for header */
+header {
+    position: static;
+    padding-bottom: 1%;
 }
-ol{
-    text-decoration: solid;
-    list-style-type: circle;
+
+/* Tablet Viewport: Style rules for nav area */
+nav li {
+    padding-top: 0%;
+    border-top: none;
+    display: inline-block;
+    border-right: 1px solid #fff;
 }
+
+nav li:last-child { 
+    border-right: none;
+}
+
+nav li a {
+    padding: 0.1em 0.75em;
+}
+
+/* Tablet Viewport: Style rules for main content area */
+main ul {
+    margin: 0 0 4% 10%;
+}
+
+
+#exercises {
+    clear: left;
+    border-top: 1px solid #000;
+    background: linear-gradient(to right, #ccc, #fff);
+    border-bottom: 1px solid #000;
+    background-color: #f2f2f2;
+    padding: 1% 2%;
+}
+
+#exercises dt {
+    font-weight: bold;
+}
+
+#exercises dd {
+    padding: 0.5% 1% 2% 0;
+}
+
+.tel-num {
+    font-size: 1.25em;
+}
+.map {
+    width: 600px;
+    height: 450px;
+}
+
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 1015px), print {
+
+/* Desktop Viewport: Style rule for header */ 
+header {
+    width: 25%;
+    float: left;
+    padding-bottom: 0;
+} 
+
+
+/* Desktop Viewport: Style rules for nav area */
+nav {
+    float: right;
+    width: 70%;
+    margin: 4em 1em 0 0;
+}
+
+nav ul {
+    text-align: right;
+}
+
+nav li {
+    border: none;
+}
+
+nav li a {
+    padding: 0.5em 1em;
+}
+
+nav li a:hover {
+    color: #000;
+    background-color: #fff;
+}
+
+
+
+/* Desktop Viewport: Style Rules for main content */
+main {
+    clear: left;
+}
+
+main h1 {
+    font-size: 1.8em;
+}
+
+#weights, #cardio, #training { 
+    width: 29%;
+    float: left;
+    margin: 0 2%;
+}
+
+#exercises {
+    clear: left;
+}
+
+.mobile-img{
+    display: block;
+}
+
+
+
+}
+
+
+section p{
+    text-align: center;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+
+
+
+
+/* Media Query for Large Desktop Viewports */ 
+@media screen and (min-width: 1921px) {
+
+    #container {
+        width: 1920px;
+        margin: 0 auto;
+    }
+
+   
+
+}
+
+/* Media Query for Print */
+@media print {
+
+    body {
+        background-color: #fff;
+        color: #000;
+    }
+
+}
+
+
+
+
+ 

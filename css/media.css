@@ -1,0 +1,18 @@
+section h2{
+    text-align: center;
+}
+
+section{
+    background-color: #b19999;
+}
+
+video, audio {
+    width: 70%; 
+    max-width: 600px; 
+    margin: 20px auto; 
+    display: block;
+  }
+ 
+  header img{
+    padding-top: 8px;
+}
